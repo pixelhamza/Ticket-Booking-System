@@ -1,15 +1,6 @@
-package com.ticketbooking.bridge;
-
-/**
- * ============================================================================
- * DESIGN PATTERN: BRIDGE (Concrete Implementor: SmsSender)
- * ============================================================================
- * Handles transmission of short messages over cellular SMS gateways.
- */
-public class SmsSender implements NotificationSender {
-
-    @Override
-    public void sendMessage(String message) {
+package eventsphere.bridge;
+public final class SMSSender implements NotificationSender {
+    public void send(String message) {
         System.out.println("SMS: " + message);
     }
 }
